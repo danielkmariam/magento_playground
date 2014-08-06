@@ -4,13 +4,6 @@
             <version>0.1.0</version>
         </Playground_Test>
     </modules>
-    <global>
-        <blocks>
-            <Playground_Test>
-                <class>Playground_Test_Block</class>
-            </Playground_Test>
-        </blocks>
-    </global>
     <frontend>
         <routers>
             <test>
