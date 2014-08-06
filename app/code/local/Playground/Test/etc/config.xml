@@ -4,15 +4,38 @@
             <version>0.1.0</version>
         </Playground_Test>
     </modules>
+    <global>
+        <blocks>
+            <Playground_Test>
+                <class>Playground_Test_Block</class>
+            </Playground_Test>
+        </blocks>
+    </global>
     <frontend>
         <routers>
-            <Playground_Test>
+            <test>
                 <use>standard</use>
                 <args>
                     <module>Playground_Test</module>
                     <frontName>test</frontName>
                 </args>
-            </Playground_Test>
+            </test>
         </routers>
+        <layout>
+            <updates>
+                <test>
+                    <file>test.xml</file>
+                </test>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Playground_Test>
+                    <files>
+                        <default>Playground_Test.csv</default>
+                    </files>
+                </Playground_Test>
+            </modules>
+        </translate>
     </frontend>
 </config>
