@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Playground_Test>
+            <version>0.1.0</version>
+        </Playground_Test>
+    </modules>
+    <frontend>
+        <routers>
+            <Playground_Test>
+                <use>standard</use>
+                <args>
+                    <module>Playground_Test</module>
+                    <frontName>test</frontName>
+                </args>
+            </Playground_Test>
+        </routers>
+    </frontend>
+</config>

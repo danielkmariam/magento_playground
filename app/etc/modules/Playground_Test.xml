@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Playground_Test>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Playground_Test>
+    </modules>
+</config>
