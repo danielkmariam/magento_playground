@@ -4,7 +4,7 @@
 
     <test_index_index>
         <reference name="content">
-            <block type="core/template" name="test" template="test/test.phtml" />
+            <block type="test/test" name="test" template="test/test.phtml" />
         </reference>
     </test_index_index>
 

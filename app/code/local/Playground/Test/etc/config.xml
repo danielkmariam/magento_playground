@@ -6,9 +6,9 @@
     </modules>
     <global>
         <blocks>
-            <Playground_Test>
+            <test>
                 <class>Playground_Test_Block</class>
-            </Playground_Test>
+            </test>
         </blocks>
     </global>
     <frontend>
