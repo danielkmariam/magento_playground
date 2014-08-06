@@ -44,6 +44,16 @@ Default layout, loads most of the pages
 
     </default>
 
+    <catalog_category_view>
+        <remove name="right.poll"/>
+        <reference name="left">
+            <block type="poll/activePoll" name="left.poll">
+                <action method="setPollTemplate"><template>poll/active.phtml</template><type>poll</type></action>
+                <action method="setPollTemplate"><template>poll/result.phtml</template><type>results</type></action>
+            </block>
+        </reference>
+    </catalog_category_view>
+
 <!--
 Customer account home dashboard layout
 -->
