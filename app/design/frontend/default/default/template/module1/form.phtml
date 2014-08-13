@@ -1,0 +1,55 @@
+<div id="messenger_messages"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="page-title">
+    <h1><?php echo $this->__('Messenger') ?></h1>
+</div>
+<form action="<?php echo $this->getFormAction(); ?>" id="module1Form" method="post">
+    <div class="fieldset">
+        <h2 class="legend"><?php echo $this->__('Send message to a friend') ?></h2>
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="referrer_email" class="required"><em>*</em><?php echo $this->__('Your Email') ?></label>
+                    <div class="input-box">
+                        <input name="referrer_email" id="referrer_email" title="<?php echo $this->__('Your Email') ?>" class="input-text required-entry validate-email" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="referrer_name" class="required"><em>*</em><?php echo $this->__('Your Name') ?></label>
+                    <div class="input-box">
+                        <input name="referrer_name" id="referrer_name" title="<?php echo $this->__('Your Name') ?>" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="field">
+                    <label for="recipient_email" class="required"><em>*</em><?php echo $this->__('Friend\'s Email') ?></label>
+                    <div class="input-box">
+                        <input name="recipient_email" id="recipient_email" title="<?php echo $this->__('Friend\'s Email') ?>" class="input-text required-entry validate-email" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="recipient_name" class="required"><em>*</em><?php echo $this->__('Friend\'s Name') ?></label>
+                    <div class="input-box">
+                        <input name="recipient_name" id="recipient_name" title="<?php echo $this->__('Friend\'s Name') ?>" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label for="message" class="required"><em>*</em><?php echo $this->__('Message') ?></label>
+                <div class="input-box">
+                    <textarea name="message" id="message" title="<?php echo $this->__('Message') ?>" class="input-text required-entry" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+        <button type="submit" title="<?php echo $this->__('Submit message') ?>" class="button"><span><span><?php echo $this->__('Submit message') ?></span></span></button>
+    </div>
+</form>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var contactForm = new VarienForm('module1Form', true);
+    //]]>
+</script>

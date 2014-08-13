@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+    <module1_index_index>
+        <reference name="content">
+            <block type="page/html" name="module1Form" template="module1/form.phtml" />
+        </reference>
+    </module1_index_index>
+
+</layout>
