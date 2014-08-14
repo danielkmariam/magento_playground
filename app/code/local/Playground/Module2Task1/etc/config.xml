@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Playground_Module2Task1>
+            <version>0.1.0</version>
+        </Playground_Module2Task1>
+    </modules>
+    <global>
+        <resources>
+            <module2task1_setup>
+                <setup>
+                    <module>Playground_Module2Task1</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </module2task1_setup>
+        </resources>
+    </global>
+</config>
