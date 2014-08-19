@@ -1,0 +1,18 @@
+<?php
+$_order = $this->getOrder();
+$userComment = $_order->getUserComment();
+?>
+
+<?php if ($userComment): ?>
+    <div class="box-right">
+        <div class="entry-edit">
+            <div class="entry-edit-head">
+                <h4 class="icon-head"><?php echo $this->__('User notes for shipping') ?></h4>
+            </div>
+            <div class="fieldset">
+                <?php echo nl2br($this->escapeHtml($userComment)); ?>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+<?php endif; ?>

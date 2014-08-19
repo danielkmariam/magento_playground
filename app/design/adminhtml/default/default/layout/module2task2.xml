@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<layout>
+    <adminhtml_sales_order_view>
+        <reference name="order_info">
+            <action method='setTemplate'><template>module2task2/sales/order/info.phtml</template></action>
+            <block type="adminhtml/sales_order_view_info" name="mage_order_info" template="sales/order/view/info.phtml" />
+            <block type="adminhtml/sales_order_view_info" name="module2task2_order_info" template="module2task2/sales/order/view/info.phtml" />
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

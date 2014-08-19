@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+<!--
+One page checkout main layout
+-->
+
+    <checkout_onepage_index>
+        <action method="setTemplate" block="checkout.onepage.shipping">
+            <template>module2task2/onepage/shipping.phtml</template>
+        </action>
+    </checkout_onepage_index>
+</layout>
